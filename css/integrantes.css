@@ -1,0 +1,42 @@
+
+.integrantes-banda {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+
+
+
+
+
+.integrante {
+  flex: 1 0 25%;
+  max-width: 25%;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #00000036;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.integrante img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.integrante h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem; /* Ajusta el margen inferior del nombre */
+}
+
+.integrante p {
+  font-size: 1rem;
+  color: #fffdfd;
+  margin-bottom: 0; /* Ajusta el margen inferior del rol en la banda */
+}

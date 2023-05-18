@@ -1,0 +1,183 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	background-image: url('https://www.nacionrock.com/wp-content/uploads/2e08645cca9a260b1e8b11f8066e72aaa5da452b.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #fff;
+	height: 100vh;
+	width: 100%;
+  }
+
+  .menu {
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQK0_Tj08gYCyJJYiqSngs5uGDnbuR39WJbA&usqp=CAU");
+	background-size: cover;
+	padding: 10px;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden; /* Agregado para recortar los elementos que se salen del contenedor */
+  }
+  
+  .logo img {
+	height: 0.01rem;
+  }
+  
+  .nav-items {
+	display: flex;
+	gap: 10px;
+  }
+  
+  .nav-items a {
+	display: inline-block;
+	padding: 1rem;
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #000;
+	border: none;
+	border-radius: 30px;
+	transition: all 0.2s;
+	white-space: nowrap; /* Agregado para evitar el salto de línea */
+	overflow: hidden; /* Agregado para recortar los elementos que se salen del contenedor */
+	text-overflow: ellipsis; /* Agregado para mostrar puntos suspensivos en los elementos que se recortan */
+  }
+  
+  .nav-items a:hover {
+	background-color: #e60000;
+  }
+  
+  .nav-items a::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	
+	bottom: 0;
+	left: 0;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.3s ease-in-out;
+  }
+  
+  .nav-items a:hover::before {
+	transform: scaleX(1);
+  }
+  @media screen and (max-width: 768px) {
+	  .menu {
+	  flex-direction: column;
+	  align-items: stretch;
+	}
+	
+	.nav-items {
+	  flex-direction: column;
+	  align-items: center;
+	}
+	
+	.nav-items a {
+	  width: 100%;
+	  text-align: center;
+	  margin: 5px 0;
+	  font-size: 18px;
+	}
+  }
+  /*
+ol {
+	background: #ff9999;
+	padding: 20px;
+  }
+  
+  ul {
+	background: #3399ff;
+	padding: 20px;
+  }
+  
+  ol li {
+	background: #ffe5e5;
+	color: darkred;
+	padding: 5px;
+	margin-left: 35px;
+  }
+  
+  ul li {
+	background: #cce5ff;
+	color: darkblue;
+	margin: 5px;
+  }
+*/
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+header {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+h1 {
+	font-size: 4.5rem;
+	font-weight: bold;
+	color: transparent;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+	margin-bottom: 20px;
+	background-image: url('https://c4.wallpaperflare.com/wallpaper/787/1000/988/red-hot-chili-peppers-helmet-rock-bands-antenna-wallpaper-preview.jpg');
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  }
+  
+
+
+a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 24px;
+	text-shadow: 2px 2px #000;
+}
+
+main {
+	margin-bottom: 40px;
+}
+
+section {
+	margin-bottom: 40px;
+}
+
+h2 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+p {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+footer {
+	text-align: center;
+	padding: 20px;
+	background-color: #333;
+}
+
+p {
+	font-size: 16px;
+	color: #fff;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
