@@ -7,8 +7,8 @@ async function obtenerTemperatura(){
 
         console.log("Data de la Api:", data.current_weather.temperature
         );
-        document.getElementById("#temp").innerHTML = data.current_weather.temperature
-        document.getElementById("#viento").innerHTML = data.current_weather.windspeed
+        document.getElementById("temp").innerHTML = data.current_weather.temperature
+        document.getElementById("viento").innerHTML = data.current_weather.windspeed
     
     }
     catch(error) {console.log('Ocurrió un error grave', error)}
